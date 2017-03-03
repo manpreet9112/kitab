@@ -1,0 +1,431 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/typography";
+@import "susy";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,800,300);
+
+/** Color Start 
+ */
+
+$black:#222;
+$lessblack:#333;
+$lesserblack:#444;
+$offwhite:#fafafa;
+$white: #FFFFFF;
+$green: #0FEB63;
+$rose: #FF3B5B;
+$lessrose: #F24153;
+$purple: #9A65CD;
+$blue: #5CA1E5;
+$grey: #F0F0F0;
+
+/** Color End 
+ */
+
+/** Images Start
+ */
+
+$landing-image: "../tasveer/landing.jpg";
+$zoom : "../tasveer/zoom.png";
+$content: "../tasveer/content.png";
+$flip : "../tasveer/flip.png";
+$slide-3-bg : "../tasveer/slide4.jpg";
+
+/** Images End
+ */
+
+
+/** Mixins Start 
+ */
+
+@mixin breakpoint($media) {
+    @if $media == alpha {
+        @media only screen and (max-width: 320px) { @content; }
+    } @else if $media == beta {
+        @media only screen and (min-width: 321px) and (max-width: 640px) { @content; }
+    } @else if $media == gamma {
+        @media only screen and (min-width: 641px) and (max-width: 1024px) { @content; }
+    } @else if $media == delta {
+        @media only screen and (min-width: 1025px) and (max-width: 1440px) { @content; }
+    } @else if $media == epsilon {
+        @media only screen and (min-width: 1441px) and (max-width: 1920px) { @content; }
+    }    
+}
+
+/** Mixins End 
+ */
+
+/** Decorations
+ */
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+html {
+  font-family:'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
+
+body {
+  font-size: 1.3em;
+}
+
+.circular-image {
+    height: 175px;
+    width: 175px;
+    line-height: 175px;
+    max-width: 100%;
+    border-radius: 50%;
+    display: block;
+    color: #FFF;
+    font-size: 55px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    margin: 0px auto 50px;
+    @include breakpoint(alpha){height:129px; width:129px;}
+    @include breakpoint(beta){height:153px; width:147px;}
+}
+
+.hrLine {
+    display: block;
+    width: 35px;
+    margin: 25px auto;
+    border: 2px solid $rose;    
+}
+/** Decorations
+ */
+
+
+header {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url($landing-image) center no-repeat;
+    @include background-size(cover);
+  
+    .content {
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5);         
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        z-index: 1;
+    }
+  
+    .main-heading {
+        color:$white;
+        text-align:center;
+        font-weight:400; 
+        @include breakpoint(alpha){padding-top:8rem; font-size:1.5rem;}
+        @include breakpoint(beta){padding-top:7.5rem; font-size:2.6rem;}
+        @include breakpoint(gamma){padding-top:6rem; font-size:5rem;}
+        @include breakpoint(delta){padding-top:6.5rem; font-size:5.8rem;}
+        @include breakpoint(epsilon){padding-top:6.0rem; font-size:6.4rem;}                
+    }
+    .tagline {
+        text-align:center; 
+        .tagline1 {
+            color: $white;
+            font-weight:400;
+            @include breakpoint(alpha){font-size:1.6rem;}
+            @include breakpoint(beta){font-size:2.7rem;}
+            @include breakpoint(gamma){font-size:5rem;}
+            @include breakpoint(delta){font-size:5.5rem;}
+            @include breakpoint(epsilon){font-size:6.2rem;}
+        }
+        .tagline2 {
+            color: $offwhite;
+            font-weight:400;
+            @include breakpoint(alpha){font-size:1.6rem;}
+            @include breakpoint(beta){font-size:2.7rem;}
+            @include breakpoint(gamma){font-size:5rem;}
+            @include breakpoint(delta){font-size:5.5rem;}
+            @include breakpoint(epsilon){font-size:6.2rem;}
+        }            
+    }
+    .subTagline {
+        color:$white;
+        text-align:center;
+        font-weight:400; 
+        @include breakpoint(alpha){font-size:1.8rem;}
+        @include breakpoint(beta){font-size:3rem;}
+        @include breakpoint(gamma){font-size:5rem;}
+        @include breakpoint(delta){font-size:5.4rem;}
+        @include breakpoint(epsilon){font-size:6.0rem;}               
+    }
+    .edition {
+        color: $rose;
+        text-align:center;
+        font-size:400;
+        @include breakpoint(alpha){padding-top:2.5rem; font-size:1.2rem;}
+        @include breakpoint(beta){padding-top:2.4rem; font-size:1.4rem;}
+        @include breakpoint(gamma){font-size:1.8rem;}
+        @include breakpoint(delta){padding-top:2.4rem; font-size:2rem;}
+        @include breakpoint(epsilon){padding-top:2.4rem; font-size:2.6rem;}
+    }            
+    .authors {
+        text-align:center;
+        .by {
+            text-align:center;
+            color: $white;
+            @include breakpoint(alpha){font-size:0.9rem;}
+            @include breakpoint(beta){font-size:1.2rem;}
+            @include breakpoint(gamma){font-size:1.5rem;}
+            @include breakpoint(delta){font-size:1.6rem;}
+            @include breakpoint(epsilon){font-size:2rem;}
+        }
+        .authName {
+            color: $rose;   
+            @include breakpoint(alpha){padding-top:2.2rem; font-size:0.9rem;}
+            @include breakpoint(beta){font-size:1.2rem;}
+            @include breakpoint(gamma){font-size:1.5rem;}
+            @include breakpoint(delta){font-size:1.6rem;}
+            @include breakpoint(epsilon){font-size:2rem;}                        
+        }   
+    }       
+}
+
+.site2 {
+    .head {
+        background-color: $black;
+        height:7rem;
+        .headHeading {
+            text-align: center;
+            font-weight: 200;
+            color: $rose;
+            padding-top: 1.5rem;
+            @include breakpoint(alpha){font-size:2rem}
+            @include breakpoint(beta){font-size:2rem}
+            @include breakpoint(gamma){font-size:2.4rem}
+            @include breakpoint(delta){font-size:2.8rem}
+            @include breakpoint(epsilon){font-size:3rem}
+        }
+    }
+    main {
+        padding: 3.5em 0;
+        @include container(90%);
+        @include breakpoint(alpha){@include container(70%);}
+        .icon1 {
+            @include span(4 of 12);
+            @include breakpoint(alpha){@include span(12 of 12); padding-bottom:1.5rem;}
+            @include breakpoint(beta){@include span(12 of 12); padding-bottom:1.5rem;}
+            text-align: center;
+            .image1 {
+                background: url($zoom) no-repeat center;
+                background-position: center;
+                @include background-size(cover);
+                @extend .circular-image;
+            }
+            .heading1 {
+                padding-bottom: 1rem;
+                font-size: 1.7rem;
+                font-weight: 200;
+                color: $rose;
+                @include breakpoint(alpha){font-size: 1rem;}
+            }
+            .description1 {
+                padding-top: 0.7rem;
+                color: $lessblack;
+                text-align:left;
+                @include breakpoint(alpha){font-size: 0.8rem;}
+            }            
+        }
+        .icon2 {
+            @include span(4 at 5 of 12);
+            @include breakpoint(alpha){@include span(12 of 12); padding-bottom:1.5rem;}
+            @include breakpoint(beta){@include span(12 of 12); padding-bottom:1.5rem;}
+            text-align: center;
+            .image2 {
+                background: url($flip) no-repeat center;
+                background-position: center;
+                @include background-size(cover);
+                @extend .circular-image;
+            }
+            .heading2 {
+                padding-bottom: 1rem;                
+                font-size: 1.7rem;
+                font-weight: 200;
+                color: $rose;
+                @include breakpoint(alpha){font-size: 1rem; }
+            }
+            .description2 {
+                padding-top: 0.7rem;
+                color: $lessblack;
+                text-align:left;
+                @include breakpoint(alpha){font-size: 0.8rem;}             
+            }                        
+        }
+        .icon3 {
+            @include span(4 at 9 of 12);
+            @include breakpoint(alpha){@include span(12 of 12); padding-bottom:1.5rem;}
+            @include breakpoint(beta){@include span(12 of 12); padding-bottom:1.5rem;}
+            text-align: center;
+            .image3 {
+                background: url($content) no-repeat center;
+                background-position: center;
+                @include background-size(cover);
+                @extend .circular-image; 
+            }
+            .heading3 {
+                padding-bottom: 1rem;                
+                font-size: 1.7rem;
+                font-weight: 200;
+                color: $rose;
+                @include breakpoint(alpha){font-size: 1rem;}
+            }
+            .description3 {
+                padding-top: 0.7rem;
+                color: $lessblack;
+                text-align:left; 
+                @include breakpoint(alpha){font-size: 0.8rem;}
+            }            
+        }                 
+    }
+}
+
+.site3 {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url($slide-3-bg) center no-repeat;
+    @include background-size(cover);
+    background-attachment:fixed;    
+    .slide3layer {
+        background: rgb(38, 41, 48);
+        background: rgba(38, 41, 48, 0.5);         
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        z-index: 1;      
+        .slide3description {
+            @include container(80%);
+            .thanks {
+                color: $offwhite;
+                text-align: center;
+                text-decoration: none;
+                @include breakpoint(alpha){padding: 1.5rem; font-size: 1.2rem;}
+                @include breakpoint(beta){padding: 1.5rem; font-size: 1.2rem;}
+                @include breakpoint(gamma){padding: 1.5rem; font-size: 1.8rem;}
+                @include breakpoint(delta){font-weight: 200; padding: 2.5rem; font-size: 3.4rem;}
+                @include breakpoint(epsilon){font-weight: 200; padding: 2.7rem; font-size: 3.7rem;}
+            }
+            .thanksdescription {
+                font-weight: 200;
+                color: $offwhite;
+                text-align:center;          
+                @include breakpoint(alpha){text-align: left; font-size: 1rem; padding-bottom: 1.4rem;}
+                @include breakpoint(beta){text-align: left; font-size: 1rem; padding-bottom: 1.4rem;}
+                @include breakpoint(gamma){text-align: left; font-size: 1.3rem; padding-bottom: 1.4rem;}
+                @include breakpoint(delta){font-size: 1.5rem; padding-bottom:1.1rem;}
+                @include breakpoint(epsilon){font-size: 1.5rem; padding-bottom:1.2rem;}
+                .rai {
+                    color: $rose;
+                }   
+            }
+            .state {
+                font-size:1rem;
+                font-weight:200;
+                text-align: left;
+                color: $offwhite;
+                padding-bottom:0.5rem;
+                @include breakpoint(alpha){font-size: 1rem;}
+                @include breakpoint(beta){font-size: 1rem;}
+                @include breakpoint(gamma){font-size: 1rem;}
+                @include breakpoint(delta){font-size:1.4rem;}
+                @include breakpoint(epsilon){font-size:1.4rem;}
+            }
+            .authName {
+                font-size:1rem;
+                font-weight:200;
+                text-align: left;
+                color: $offwhite;
+                padding-bottom:0.5rem;
+                @include breakpoint(alpha){font-size: 1rem;}
+                @include breakpoint(beta){font-size: 1rem; padding-bottom:0.2rem;}
+                @include breakpoint(gamma){font-size: 1rem;}
+                @include breakpoint(delta){font-size:1.4rem;}
+                @include breakpoint(epsilon){font-size:1.4rem;}                                
+            }
+            .date {
+                font-size:1rem;
+                font-weight:200;
+                text-align: left;
+                color: $offwhite;
+                padding-bottom:0.5rem;
+                @include breakpoint(alpha){font-size: 1rem;}
+                @include breakpoint(beta){font-size: 1rem;}
+                @include breakpoint(gamma){font-size: 1rem;}
+                @include breakpoint(delta){font-size:1.4rem;}
+                @include breakpoint(epsilon){font-size:1.4rem;}                                   
+            }
+            .version {
+                text-align:left;
+                @include breakpoint(alpha){display:none;}
+                .edition{
+                    font-weight: 200;
+                    text-align: left;
+                    color: $offwhite;
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;
+                    @include breakpoint(beta){font-size:1rem; padding-bottom: 0.3rem;}
+                    @include breakpoint(gamma){font-size:1.4rem; padding-bottom: 0.3rem;}
+                }
+                .list {
+                    font-weight: 200;
+                    text-align: left;                    
+                    color: $offwhite;
+                    line-height: 2rem;
+                    @include breakpoint(beta){line-height: 1.4rem; font-size: 1rem;}
+                    @include breakpoint(beta){line-height: 1.8rem; font-size: 1rem;}
+                }
+            }
+            .hoverMe {
+                text-align: center;
+                font-size: 200;
+                color: $offwhite;
+                font-size: 3rem;
+                @include breakpoint(alpha){font-size: 1.5rem; padding-bottom: 1rem;}
+                @include breakpoint(beta){font-size: 1.2rem; padding-bottom: 1rem;}
+                @include breakpoint(gamma){font-size: 1.4rem; padding-bottom: 1.1rem;}
+                @include breakpoint(delta){font-size: 2.9rem; padding-bottom: 2.1rem;}
+                @include breakpoint(epsilon){font-size: 2.9rem; padding-bottom: 2.1rem;}    
+            }
+            .button {
+                text-align:center;
+                font-size: 2.1rem;
+                background: rgba(19, 20, 24, 0.5);
+                border: 2px solid $offwhite;
+                width: 275px;
+                height: 63px;
+                border-radius: 45px;
+                color: white;    
+                curson: pointer;  
+                @include transition(background 0.50s ease-in-out);
+                @include breakpoint(alpha){font-size: 1.1rem; width: 204px; height: 47px; margin: 2px -15px 2px -21px;}
+                @include breakpoint(beta){font-size: 0.9rem; width: 167px; height: 40px;}
+                @include breakpoint(gamma){width: 233px; height: 46px; margin: 2px -7px 2px -21px;}
+                @include breakpoint(delta){font-size: 2.5rem; width: 300px; height: 88px; margin : 2px auto 2px -21px; padding: 1.1rem;}
+                @include breakpoint(epsilon){font-size: 2.5rem; width: 300px; height: 88px; margin : 2px auto 2px -21px; padding: 1.1rem;}
+                &:hover {
+                    background: $lessrose;
+                }     
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $lessblack;
+    padding-bottom: 2.5rem;
+    .quote {
+        text-align: center;
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight:100;
+        color: $offwhite;
+        padding-top: 2rem;
+    }
+}

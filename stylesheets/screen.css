@@ -1,0 +1,1100 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,800,300);
+/* line 5, ../../../../home/deepak/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../home/deepak/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../home/deepak/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../home/deepak/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../home/deepak/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../home/deepak/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../home/deepak/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../home/deepak/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../home/deepak/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/** Color Start 
+ */
+/** Color End 
+ */
+/** Images Start
+ */
+/** Images End
+ */
+/** Mixins Start 
+ */
+/** Mixins End 
+ */
+/** Decorations
+ */
+/* line 60, ../sass/screen.scss */
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+/* line 66, ../sass/screen.scss */
+html {
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
+
+/* line 73, ../sass/screen.scss */
+body {
+  font-size: 1.3em;
+}
+
+/* line 77, ../sass/screen.scss */
+.circular-image, .site2 main .icon1 .image1, .site2 main .icon2 .image2, .site2 main .icon3 .image3 {
+  height: 175px;
+  width: 175px;
+  line-height: 175px;
+  max-width: 100%;
+  border-radius: 50%;
+  display: block;
+  color: #FFF;
+  font-size: 55px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  margin: 0px auto 50px;
+}
+@media only screen and (max-width: 320px) {
+  /* line 77, ../sass/screen.scss */
+  .circular-image, .site2 main .icon1 .image1, .site2 main .icon2 .image2, .site2 main .icon3 .image3 {
+    height: 129px;
+    width: 129px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 640px) {
+  /* line 77, ../sass/screen.scss */
+  .circular-image, .site2 main .icon1 .image1, .site2 main .icon2 .image2, .site2 main .icon3 .image3 {
+    height: 153px;
+    width: 147px;
+  }
+}
+
+/* line 94, ../sass/screen.scss */
+.hrLine {
+  display: block;
+  width: 35px;
+  margin: 25px auto;
+  border: 2px solid #FF3B5B;
+}
+
+/** Decorations
+ */
+/* line 104, ../sass/screen.scss */
+header {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background: url("../tasveer/landing.jpg") center no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+/* line 111, ../sass/screen.scss */
+header .content {
+  background: black;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+/* line 119, ../sass/screen.scss */
+header .main-heading {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 200;
+}
+@media only screen and (max-width: 320px) {
+  /* line 119, ../sass/screen.scss */
+  header .main-heading {
+    padding-top: 8rem;
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 640px) {
+  /* line 119, ../sass/screen.scss */
+  header .main-heading {
+    padding-top: 7.5rem;
+    font-size: 2.6rem;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  /* line 119, ../sass/screen.scss */
+  header .main-heading {
+    padding-top: 6rem;
+    font-size: 5rem;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* line 119, ../sass/screen.scss */
+  header .main-heading {
+    padding-top: 6.5rem;
+    font-size: 5.8rem;
+  }
+}
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  /* line 119, ../sass/screen.scss */
+  header .main-heading {
+    padding-top: 6.0rem;
+    font-size: 6.4rem;
+  }
+}
+/* line 129, ../sass/screen.scss */
+header .tagline {
+  text-align: center;
+}
+/* line 131, ../sass/screen.scss */
+header .tagline .tagline1 {
+  color: #FFFFFF;
+  font-weight: 400;
+}
+@media only screen and (max-width: 320px) {
+  /* line 131, ../sass/screen.scss */
+  header .tagline .tagline1 {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 640px) {
+  /* line 131, ../sass/screen.scss */
+  header .tagline .tagline1 {
+    font-size: 2.7rem;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  /* line 131, ../sass/screen.scss */
+  header .tagline .tagline1 {
+    font-size: 5rem;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* line 131, ../sass/screen.scss */
+  header .tagline .tagline1 {
+    font-size: 5.5rem;
+  }
+}
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  /* line 131, ../sass/screen.scss */
+  header .tagline .tagline1 {
+    font-size: 6.2rem;
+  }
+}
+/* line 140, ../sass/screen.scss */
+header .tagline .tagline2 {
+  color: #fafafa;
+  font-weight: 400;
+}
+@media only screen and (max-width: 320px) {
+  /* line 140, ../sass/screen.scss */
+  header .tagline .tagline2 {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 640px) {
+  /* line 140, ../sass/screen.scss */
+  header .tagline .tagline2 {
+    font-size: 2.7rem;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  /* line 140, ../sass/screen.scss */
+  header .tagline .tagline2 {
+    font-size: 5rem;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* line 140, ../sass/screen.scss */
+  header .tagline .tagline2 {
+    font-size: 5.5rem;
+  }
+}
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  /* line 140, ../sass/screen.scss */
+  header .tagline .tagline2 {
+    font-size: 6.2rem;
+  }
+}
+/* line 150, ../sass/screen.scss */
+header .subTagline {
+  color: #FFFFFF;
+
+  text-align: center;
+  font-size: 50;
+  font-weight: 100;
+}
+@media only screen and (max-width: 320px) {
+  /* line 150, ../sass/screen.scss */
+  header .subTagline {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 640px) {
+  /* line 150, ../sass/screen.scss */
+  header .subTagline {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  /* line 150, ../sass/screen.scss */
+  header .subTagline {
+    font-size: 5rem;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* line 150, ../sass/screen.scss */
+  header .subTagline {
+    font-size: 5.4rem;
+  }
+}
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  /* line 150, ../sass/screen.scss */
+  header .subTagline {
+    font-size: 6.0rem;
+  }
+}
+/* line 160, ../sass/screen.scss */
+header .edition {
+  color: #FF3B5B;
+  text-align: center;
+  font-size: 400;
+}
+@media only screen and (max-width: 320px) {
+  /* line 160, ../sass/screen.scss */
+  header .edition {
+    padding-top: 2.5rem;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 640px) {
+  /* line 160, ../sass/screen.scss */
+  header .edition {
+    padding-top: 2.4rem;
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  /* line 160, ../sass/screen.scss */
+  header .edition {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* line 160, ../sass/screen.scss */
+  header .edition {
+    padding-top: 2.4rem;
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  /* line 160, ../sass/screen.scss */
+  header .edition {
+    padding-top: 2.4rem;
+    font-size: 2.6rem;
+  }
+}
+/* line 170, ../sass/screen.scss */
+header .authors {
+  text-align: center;
+}
+/* line 172, ../sass/screen.scss */
+header .authors .by {
+  text-align: center;
+  color: #FFFFFF;
+}
+@media only screen and (max-width: 320px) {
+  /* line 172, ../sass/screen.scss */
+  header .authors .by {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 640px) {
+  /* line 172, ../sass/screen.scss */
+  header .authors .by {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  /* line 172, ../sass/screen.scss */
+  header .authors .by {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* line 172, ../sass/screen.scss */
+  header .authors .by {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  /* line 172, ../sass/screen.scss */
+  header .authors .by {
+    font-size: 2rem;
+  }
+}
+/* line 181, ../sass/screen.scss */
+header .authors .authName {
+  color: #FF3B5B;
+}
+@media only screen and (max-width: 320px) {
+  /* line 181, ../sass/screen.scss */
+  header .authors .authName {
+    padding-top: 2.2rem;
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 640px) {
+  /* line 181, ../sass/screen.scss */
+  header .authors .authName {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  /* line 181, ../sass/screen.scss */
+  header .authors .authName {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* line 181, ../sass/screen.scss */
+  header .authors .authName {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  /* line 181, ../sass/screen.scss */
+  header .authors .authName {
+    font-size: 2rem;
+  }
+}
+
+/* line 193, ../sass/screen.scss */
+.site2 .head {
+  background-color: #222;
+  height: 7rem;
+}
+/* line 196, ../sass/screen.scss */
+.site2 .head .headHeading {
+  text-align: center;
+  font-weight: 200;
+  color: #FF3B5B;
+  padding-top: 1.5rem;
+}
+@media only screen and (max-width: 320px) {
+  /* line 196, ../sass/screen.scss */
+  .site2 .head .headHeading {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 640px) {
+  /* line 196, ../sass/screen.scss */
+  .site2 .head .headHeading {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  /* line 196, ../sass/screen.scss */
+  .site2 .head .headHeading {
+    font-size: 2.4rem;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* line 196, ../sass/screen.scss */
+  .site2 .head .headHeading {
+    font-size: 2.8rem;
+  }
+}
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  /* line 196, ../sass/screen.scss */
+  .site2 .head .headHeading {
+    font-size: 3rem;
+  }
+}
+/* line 208, ../sass/screen.scss */
+.site2 main {
+  padding: 3.5em 0;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../home/deepak/.rvm/gems/ruby-2.1.5/gems/susy-2.2.0.beta.3/sass/susy/output/support/_clearfix.scss */
+.site2 main:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media only screen and (max-width: 320px) {
+  /* line 208, ../sass/screen.scss */
+  .site2 main {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../home/deepak/.rvm/gems/ruby-2.1.5/gems/susy-2.2.0.beta.3/sass/susy/output/support/_clearfix.scss */
+  .site2 main:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+/* line 212, ../sass/screen.scss */
+.site2 main .icon1 {
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+  text-align: center;
+}
+@media only screen and (max-width: 320px) {
+  /* line 212, ../sass/screen.scss */
+  .site2 main .icon1 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 1.5rem;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 640px) {
+  /* line 212, ../sass/screen.scss */
+  .site2 main .icon1 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 1.5rem;
+  }
+}
+/* line 217, ../sass/screen.scss */
+.site2 main .icon1 .image1 {
+  background: url("../tasveer/zoom.png") no-repeat center;
+  background-position: center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+/* line 223, ../sass/screen.scss */
+.site2 main .icon1 .heading1 {
+  padding-bottom: 1rem;
+  font-size: 1.7rem;
+  font-weight: 200;
+  color: #FF3B5B;
+}
+@media only screen and (max-width: 320px) {
+  /* line 223, ../sass/screen.scss */
+  .site2 main .icon1 .heading1 {
+    font-size: 1rem;
+  }
+}
+/* line 230, ../sass/screen.scss */
+.site2 main .icon1 .description1 {
+  padding-top: 0.7rem;
+  color: #333;
+  text-align: left;
+}
+@media only screen and (max-width: 320px) {
+  /* line 230, ../sass/screen.scss */
+  .site2 main .icon1 .description1 {
+    font-size: 0.8rem;
+  }
+}
+/* line 237, ../sass/screen.scss */
+.site2 main .icon2 {
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+  text-align: center;
+}
+@media only screen and (max-width: 320px) {
+  /* line 237, ../sass/screen.scss */
+  .site2 main .icon2 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 1.5rem;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 640px) {
+  /* line 237, ../sass/screen.scss */
+  .site2 main .icon2 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 1.5rem;
+  }
+}
+/* line 242, ../sass/screen.scss */
+.site2 main .icon2 .image2 {
+  background: url("../tasveer/flip.png") no-repeat center;
+  background-position: center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+/* line 248, ../sass/screen.scss */
+.site2 main .icon2 .heading2 {
+  padding-bottom: 1rem;
+  font-size: 1.7rem;
+  font-weight: 200;
+  color: #FF3B5B;
+}
+@media only screen and (max-width: 320px) {
+  /* line 248, ../sass/screen.scss */
+  .site2 main .icon2 .heading2 {
+    font-size: 1rem;
+  }
+}
+/* line 255, ../sass/screen.scss */
+.site2 main .icon2 .description2 {
+  padding-top: 0.7rem;
+  color: #333;
+  text-align: left;
+}
+@media only screen and (max-width: 320px) {
+  /* line 255, ../sass/screen.scss */
+  .site2 main .icon2 .description2 {
+    font-size: 0.8rem;
+  }
+}
+/* line 262, ../sass/screen.scss */
+.site2 main .icon3 {
+  width: 32.20339%;
+  float: right;
+  margin-right: 0;
+  text-align: center;
+}
+@media only screen and (max-width: 320px) {
+  /* line 262, ../sass/screen.scss */
+  .site2 main .icon3 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 1.5rem;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 640px) {
+  /* line 262, ../sass/screen.scss */
+  .site2 main .icon3 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 1.5rem;
+  }
+}
+/* line 267, ../sass/screen.scss */
+.site2 main .icon3 .image3 {
+  background: url("../tasveer/content.png") no-repeat center;
+  background-position: center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+/* line 273, ../sass/screen.scss */
+.site2 main .icon3 .heading3 {
+  padding-bottom: 1rem;
+  font-size: 1.7rem;
+  font-weight: 200;
+  color: #FF3B5B;
+}
+@media only screen and (max-width: 320px) {
+  /* line 273, ../sass/screen.scss */
+  .site2 main .icon3 .heading3 {
+    font-size: 1rem;
+  }
+}
+/* line 280, ../sass/screen.scss */
+.site2 main .icon3 .description3 {
+  padding-top: 0.7rem;
+  color: #333;
+  text-align: left;
+}
+@media only screen and (max-width: 320px) {
+  /* line 280, ../sass/screen.scss */
+  .site2 main .icon3 .description3 {
+    font-size: 0.8rem;
+  }
+}
+
+/* line 290, ../sass/screen.scss */
+.site3 {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background: url("../tasveer/slide4.jpg") center no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* line 297, ../sass/screen.scss */
+.site3 .slide3layer {
+  background: #262930;
+  background: rgba(38, 41, 48, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+/* line 303, ../sass/screen.scss */
+.site3 .slide3layer .slide3description {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../home/deepak/.rvm/gems/ruby-2.1.5/gems/susy-2.2.0.beta.3/sass/susy/output/support/_clearfix.scss */
+.site3 .slide3layer .slide3description:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 305, ../sass/screen.scss */
+.site3 .slide3layer .slide3description .thanks {
+  color: #fafafa;
+  text-align: center;
+  text-decoration: none;
+}
+@media only screen and (max-width: 320px) {
+  /* line 305, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .thanks {
+    padding: 1.5rem;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 640px) {
+  /* line 305, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .thanks {
+    padding: 1.5rem;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  /* line 305, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .thanks {
+    padding: 1.5rem;
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* line 305, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .thanks {
+    font-weight: 200;
+    padding: 2.5rem;
+    font-size: 3.4rem;
+  }
+}
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  /* line 305, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .thanks {
+    font-weight: 200;
+    padding: 2.7rem;
+    font-size: 3.7rem;
+  }
+}
+/* line 315, ../sass/screen.scss */
+.site3 .slide3layer .slide3description .thanksdescription {
+  font-weight: 200;
+  color: #fafafa;
+  text-align: center;
+}
+@media only screen and (max-width: 320px) {
+  /* line 315, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .thanksdescription {
+    text-align: left;
+    font-size: 1rem;
+    padding-bottom: 1.4rem;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 640px) {
+  /* line 315, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .thanksdescription {
+    text-align: left;
+    font-size: 1rem;
+    padding-bottom: 1.4rem;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  /* line 315, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .thanksdescription {
+    text-align: left;
+    font-size: 1.3rem;
+    padding-bottom: 1.4rem;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* line 315, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .thanksdescription {
+    font-size: 1.5rem;
+    padding-bottom: 1.1rem;
+  }
+}
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  /* line 315, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .thanksdescription {
+    font-size: 1.5rem;
+    padding-bottom: 1.2rem;
+  }
+}
+/* line 324, ../sass/screen.scss */
+.site3 .slide3layer .slide3description .thanksdescription .rai {
+  color: #FF3B5B;
+}
+/* line 328, ../sass/screen.scss */
+.site3 .slide3layer .slide3description .state {
+  font-size: 1rem;
+  font-weight: 200;
+  text-align: left;
+  color: #fafafa;
+  padding-bottom: 0.5rem;
+}
+@media only screen and (max-width: 320px) {
+  /* line 328, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .state {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 640px) {
+  /* line 328, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .state {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  /* line 328, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .state {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* line 328, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .state {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  /* line 328, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .state {
+    font-size: 1.4rem;
+  }
+}
+/* line 340, ../sass/screen.scss */
+.site3 .slide3layer .slide3description .authName {
+  font-size: 1rem;
+  font-weight: 200;
+  text-align: left;
+  color: #fafafa;
+  padding-bottom: 0.5rem;
+}
+@media only screen and (max-width: 320px) {
+  /* line 340, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .authName {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 640px) {
+  /* line 340, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .authName {
+    font-size: 1rem;
+    padding-bottom: 0.2rem;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  /* line 340, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .authName {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* line 340, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .authName {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  /* line 340, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .authName {
+    font-size: 1.4rem;
+  }
+}
+/* line 352, ../sass/screen.scss */
+.site3 .slide3layer .slide3description .date {
+  font-size: 1rem;
+  font-weight: 200;
+  text-align: left;
+  color: #fafafa;
+  padding-bottom: 0.5rem;
+}
+@media only screen and (max-width: 320px) {
+  /* line 352, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .date {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 640px) {
+  /* line 352, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .date {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  /* line 352, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .date {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* line 352, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .date {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  /* line 352, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .date {
+    font-size: 1.4rem;
+  }
+}
+/* line 364, ../sass/screen.scss */
+.site3 .slide3layer .slide3description .version {
+  text-align: left;
+}
+@media only screen and (max-width: 320px) {
+  /* line 364, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .version {
+    display: none;
+  }
+}
+/* line 367, ../sass/screen.scss */
+.site3 .slide3layer .slide3description .version .edition {
+  font-weight: 200;
+  text-align: left;
+  color: #fafafa;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+@media only screen and (min-width: 321px) and (max-width: 640px) {
+  /* line 367, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .version .edition {
+    font-size: 1rem;
+    padding-bottom: 0.3rem;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  /* line 367, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .version .edition {
+    font-size: 1.4rem;
+    padding-bottom: 0.3rem;
+  }
+}
+/* line 376, ../sass/screen.scss */
+.site3 .slide3layer .slide3description .version .list {
+  font-weight: 200;
+  text-align: left;
+  color: #fafafa;
+  line-height: 2rem;
+}
+@media only screen and (min-width: 321px) and (max-width: 640px) {
+  /* line 376, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .version .list {
+    line-height: 1.4rem;
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 640px) {
+  /* line 376, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .version .list {
+    line-height: 1.8rem;
+    font-size: 1rem;
+  }
+}
+/* line 385, ../sass/screen.scss */
+.site3 .slide3layer .slide3description .hoverMe {
+  text-align: center;
+  font-size: 200;
+  color: #fafafa;
+  font-size: 3rem;
+}
+@media only screen and (max-width: 320px) {
+  /* line 385, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .hoverMe {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 640px) {
+  /* line 385, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .hoverMe {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  /* line 385, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .hoverMe {
+    font-size: 1.4rem;
+    padding-bottom: 1.1rem;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* line 385, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .hoverMe {
+    font-size: 2.9rem;
+    padding-bottom: 2.1rem;
+  }
+}
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  /* line 385, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .hoverMe {
+    font-size: 2.9rem;
+    padding-bottom: 2.1rem;
+  }
+}
+/* line 396, ../sass/screen.scss */
+.site3 .slide3layer .slide3description .button {
+  text-align: center;
+  font-size: 2.1rem;
+  background: rgba(19, 20, 24, 0.5);
+  border: 2px solid #fafafa;
+  width: 275px;
+  height: 63px;
+  border-radius: 45px;
+  color: white;
+  curson: pointer;
+  -moz-transition: background 0.5s ease-in-out;
+  -o-transition: background 0.5s ease-in-out;
+  -webkit-transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
+}
+@media only screen and (max-width: 320px) {
+  /* line 396, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .button {
+    font-size: 1.1rem;
+    width: 204px;
+    height: 47px;
+    margin: 2px -15px 2px -21px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 640px) {
+  /* line 396, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .button {
+    font-size: 0.9rem;
+    width: 167px;
+    height: 40px;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  /* line 396, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .button {
+    width: 233px;
+    height: 46px;
+    margin: 2px -7px 2px -21px;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* line 396, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .button {
+    font-size: 2.5rem;
+    width: 300px;
+    height: 88px;
+    margin: 2px auto 2px -21px;
+    padding: 1.1rem;
+  }
+}
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  /* line 396, ../sass/screen.scss */
+  .site3 .slide3layer .slide3description .button {
+    font-size: 2.5rem;
+    width: 300px;
+    height: 88px;
+    margin: 2px auto 2px -21px;
+    padding: 1.1rem;
+  }
+}
+/* line 412, ../sass/screen.scss */
+.site3 .slide3layer .slide3description .button:hover {
+  background: #F24153;
+}
+
+/* line 420, ../sass/screen.scss */
+footer {
+  background-color: #333;
+  padding-bottom: 2.5rem;
+}
+/* line 423, ../sass/screen.scss */
+footer .quote {
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 100;
+  color: #fafafa;
+  padding-top: 2rem;
+}
